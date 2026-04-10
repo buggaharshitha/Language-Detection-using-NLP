@@ -1,0 +1,33 @@
+INTRODUCTION
+In today’s interconnected world, people communicate in multiple languages across digital platforms. 
+Automatically detecting the language of text is essential for applications such as translation services, sentiment analysis, and conversational AI.
+The Language Detection NLP system is designed to analyze user input and identify the language with high accuracy.
+By leveraging statistical models and probability scores, the system ensures reliable detection even for short text samples.
+
+OBJECTIVES
+The main objectives of the project are:
+1.	To detect the language of user-provided text using NLP techniques.
+2.	To provide both the language code and human-readable language name.
+3.	To display probability scores for multiple possible languages.
+4.	To handle multilingual inputs with high accuracy.
+5.	To create an interactive system where users can test language detection in real time.
+
+METHODOLOGY
+1. Input Handling
+Users enter text in any language. The system accepts sentences or phrases and processes them for detection.
+2. Language Detection
+The langdetect library is used to identify the language.
+•	If the text is too short (less than three words), the system defaults to English for stability.
+•	Probabilities for multiple candidate languages are calculated.
+3. Output
+The system displays:
+•	Detected language code (e.g., en, fr, te).
+•	Language name (e.g., English, French, Telugu).
+•	Probability distribution of possible languages.
+4. User Interaction
+The program runs in a loop, allowing users to test multiple sentences until they type exit to stop.
+TECHNOLOGIES USED
+•	Python – Programming language
+•	langdetect – Language detection library
+•	Regular Expressions (Regex) – Input validation
+•	Probability Models – For multilingual detection confidence
